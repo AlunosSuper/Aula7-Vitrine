@@ -21,9 +21,9 @@ const ModeloDados = styled.div`
   gap: 16px;
   padding: 16px;
 `
-export default function Exibidor() {
-  return (
-    <Modelo>
+export default function Exibidor(props) {
+  return props.produto && Object.keys(props.produto).length > 0 
+    ? <Modelo>
 
         <ModeloImagens>
             <img
@@ -42,16 +42,17 @@ export default function Exibidor() {
         </ModeloImagens>
 
         <ModeloDados>
-            <div> Marca </div>
-            <div> Modelo </div>
-            <div> R$ 1.000,00 </div>
-            <div>
-                Dolorum amet earum deleniti tenetur repellendus
-            </div>
-            <button> Adicionar ao Carrinho </button>
+          <div> { props.produto.marca } </div>
+          <div> { props.produto.modelo } </div>
+          <div> R$ { props.produto.preco },00 </div>
+          <div> { props.produto.descricao } </div>
+          <button> Adicionar ao Carrinho </button>
+
         </ModeloDados>
+      </Modelo>
 
-
-    </Modelo>
-  )
-}
+    // Produto nao encontrado
+    : <Modelo>
+        <ModeloDados>Produto Não Encontrado </ModeloDados>
+      </Modelo>
+  }

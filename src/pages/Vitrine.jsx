@@ -8,7 +8,7 @@ export default function Vitrine() {
     <>
       <Navegacao titulo="VITRINE">
         <Link to="/"> Início </Link>
-        <Link to="/produto/1234"> Promoção </Link>
+        <Link to="/promocao"> Promoção </Link>
         <Link to="/carrinho"> Carrinho </Link>
       </Navegacao>
 

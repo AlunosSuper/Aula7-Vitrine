@@ -1,6 +1,6 @@
 const ProdutosExemplo = [
   {
-    codigo: "1234",
+    codigo: "001",
     marca: "Marca",
     modelo: "Calça Masculina",
     preco: 250,
@@ -14,9 +14,22 @@ const ProdutosExemplo = [
   },
   
   {
-    codigo: "5678",
+    codigo: "002",
     marca: "Urban Style",
     modelo: "Jaqueta Jeans",
+    preco: 399,
+    descricao: "Jaqueta jeans moderna, ideal para dias frios e looks urbanos.",
+    imagens: [
+      "https://i.ibb.co/4wZPZ8B/jaqueta1.webp",
+      "https://i.ibb.co/Jk9k0QH/jaqueta2.webp",
+      "https://i.ibb.co/4j6X2sM/jaqueta3.webp",
+    ]
+  },
+
+   {
+    codigo: "003",
+    marca: "Urban Style",
+    modelo: "Teste",
     preco: 399,
     descricao: "Jaqueta jeans moderna, ideal para dias frios e looks urbanos.",
     imagens: [

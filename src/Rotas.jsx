@@ -9,7 +9,7 @@ export default function Rotas() {
         <Route path="/" element={ <Vitrine/> }/>
         
         {/*  ROTA TEMPORÁRIA PARA TESTAR */}
-        <Route path="/produto" element={<Produto />} />
+        <Route path="/produto/:codigo" element={<Produto />} />
 
       </Routes>
     </BrowserRouter>
