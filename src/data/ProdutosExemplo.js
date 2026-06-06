@@ -10,7 +10,9 @@ const ProdutosExemplo = [
       "https://i.ibb.co/zhJfL80d/cal-a1.webp",
       "https://i.ibb.co/prkx8Bjh/cal-a2.webp",
       
-    ]
+    ],
+    promocao: true,   // campo novo — obrigatorio em todos os produtos
+
   },
   
   {
@@ -23,7 +25,9 @@ const ProdutosExemplo = [
       "https://i.ibb.co/4wZPZ8B/jaqueta1.webp",
       "https://i.ibb.co/Jk9k0QH/jaqueta2.webp",
       "https://i.ibb.co/4j6X2sM/jaqueta3.webp",
-    ]
+    ],
+    promocao: true,   // campo novo — obrigatorio em todos os produtos
+
   },
 
    {
@@ -36,7 +40,8 @@ const ProdutosExemplo = [
       "https://i.ibb.co/4wZPZ8B/jaqueta1.webp",
       "https://i.ibb.co/Jk9k0QH/jaqueta2.webp",
       "https://i.ibb.co/4j6X2sM/jaqueta3.webp",
-    ]
+    ], 
+    promocao: false,   // campo novo — obrigatorio em todos os produtos
   },
 
   // adicione mais produtos aqui...
