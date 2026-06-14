@@ -8,7 +8,10 @@ export default function Rotas() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={ <Vitrine/> }/>
+
         <Route path="/promocao" element={<Promocao />} />
+        
+
         {/*  ROTA TEMPORÁRIA PARA TESTAR */}
         <Route path="/produto/:codigo" element={<Produto />} />
 
